@@ -57,6 +57,7 @@ public class Cherry : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
+            GameManager.Instance.AddScore(score);
             Destroy(this.gameObject);
         }
     }
