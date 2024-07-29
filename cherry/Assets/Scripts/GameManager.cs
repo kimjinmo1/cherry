@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     void Start()//체리 생성
     {
-        InvokeRepeating("MakeCherry", 2f, 0.5f);
+        InvokeRepeating("MakeCherry", 2f, 0.3f);
         
     }
 
