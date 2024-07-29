@@ -23,14 +23,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-    void Start()
+    void Start()//체리 생성
     {
         InvokeRepeating("MakeCherry", 2f, 0.5f);
         
     }
 
    
-    void Update()
+    void Update()//
     {
         if (totalTime > 0f)
         {

@@ -4,17 +4,36 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public SpriteRenderer renderer;
+    private SpriteRenderer renderer;
     public float moveSpeed;
+    //float right = 5.0f;
+    //float left = -7.0f;
+    float y = -1.4f;
+    
     void Start()
     {
         renderer = GetComponent<SpriteRenderer>();
     }
 
 
-    void Update()
+    void Update()//³«»ç¹æÁö
     {
-        Move();
+
+        if(transform.position.x > 8.3)
+        {
+            renderer.flipX = true;
+            transform.position = new Vector3(0 , y  , 0); 
+        }
+
+        if (transform.position.x < -8.3)
+        {
+            renderer.flipX = false;
+            transform.position = new Vector3(0, y , 0); 
+        }
+
+
+
+            Move();//ÁÂ¿ìÀüÈ¯
         if(Input.GetKey(KeyCode.D))
         {
             renderer.flipX = false;

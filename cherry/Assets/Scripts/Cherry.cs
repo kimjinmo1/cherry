@@ -25,18 +25,18 @@ public class Cherry : MonoBehaviour
         }
         else if (type == 2)
         {
-            score = 5;
+            score = -10;
             renderer.color = Color.green;
         }
         else if (type == 3)
         {
-            score = -10;    
+            score = 5;  
             renderer.color = Color.blue;
         }
 
         if (type == 4)
         {
-            score = 3;
+            score = 4;
             renderer.color = Color.red;
         }
 
